@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "dankbhardwaj/ai-devops-copilot",
+  "pipelineDirectory": "ai-devops-copilot",
+  "workspaceDirectory": "ai-devops-copilot\\ai-devops-copilot",
+  "repositories": {
+    "dankbhardwaj/ai-devops-copilot": {
+      "repositoryPath": "ai-devops-copilot\\ai-devops-copilot",
+      "lastRunOn": "02/26/2026 13:42:00 +05:30"
+    }
+  },
+  "lastRunOn": "02/26/2026 13:42:00 +05:30"
+}
