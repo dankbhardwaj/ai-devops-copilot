@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "DESKTOP-CO4NUL9",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus8.actions.githubusercontent.com/rMvq1LwKbeiU9QkvdFWhjuKUZkuvfJWdmMLGdV1QrfKvlO0AiV/",
+  "gitHubUrl": "https://github.com/dankbhardwaj/ai-devops-copilot",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
