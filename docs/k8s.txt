@@ -1,0 +1,16 @@
+CrashLoopBackOff occurs when a Kubernetes pod repeatedly crashes.
+Kubernetes waits before restarting the pod again.
+
+Common causes of CrashLoopBackOff:
+- Application code error
+- Wrong startup command
+- Missing environment variables
+- Memory limits exceeded
+- Failed liveness probe
+- Container exits with non-zero status
+
+ImagePullBackOff happens when Kubernetes cannot pull container image.
+Common causes:
+- Wrong image name
+- Private registry authentication issue
+- Network issue
