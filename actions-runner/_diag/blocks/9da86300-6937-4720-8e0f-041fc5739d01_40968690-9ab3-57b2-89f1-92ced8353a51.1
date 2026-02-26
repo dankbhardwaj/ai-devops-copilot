@@ -1,0 +1,189 @@
+﻿2026-02-26T08:15:47.0325387Z Current runner version: '2.331.0'
+2026-02-26T08:15:47.0331465Z Runner name: 'DESKTOP-CO4NUL9'
+2026-02-26T08:15:47.0331915Z Runner group name: 'Default'
+2026-02-26T08:15:47.0332428Z Machine name: 'DESKTOP-CO4NUL9'
+2026-02-26T08:15:47.0334675Z ##[group]GITHUB_TOKEN Permissions
+2026-02-26T08:15:47.0336473Z Contents: read
+2026-02-26T08:15:47.0336727Z Metadata: read
+2026-02-26T08:15:47.0336984Z Packages: read
+2026-02-26T08:15:47.0337269Z ##[endgroup]
+2026-02-26T08:15:47.0338810Z Secret source: Actions
+2026-02-26T08:15:47.0339194Z Prepare workflow directory
+2026-02-26T08:15:47.0782616Z Prepare all required actions
+2026-02-26T08:15:47.0814323Z Getting action download info
+2026-02-26T08:15:48.2154186Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-02-26T08:15:50.8833952Z Complete job name: build-push-deploy
+2026-02-26T08:15:51.0525125Z ##[group]Run actions/checkout@v4
+2026-02-26T08:15:51.0527031Z with:
+2026-02-26T08:15:51.0527699Z   repository: ***/ai-devops-copilot
+2026-02-26T08:15:51.0529697Z   token: ***
+2026-02-26T08:15:51.0530028Z   ssh-strict: true
+2026-02-26T08:15:51.0530319Z   ssh-user: git
+2026-02-26T08:15:51.0530611Z   persist-credentials: true
+2026-02-26T08:15:51.0530933Z   clean: true
+2026-02-26T08:15:51.0531248Z   sparse-checkout-cone-mode: true
+2026-02-26T08:15:51.0531597Z   fetch-depth: 1
+2026-02-26T08:15:51.0531874Z   fetch-tags: false
+2026-02-26T08:15:51.0532167Z   show-progress: true
+2026-02-26T08:15:51.0532475Z   lfs: false
+2026-02-26T08:15:51.0532753Z   submodules: false
+2026-02-26T08:15:51.0533056Z   set-safe-directory: true
+2026-02-26T08:15:51.0533980Z env:
+2026-02-26T08:15:51.0534429Z   IMAGE_NAME: ***/ai-devops-copilot
+2026-02-26T08:15:51.0534803Z ##[endgroup]
+2026-02-26T08:15:51.6959802Z Syncing repository: ***/ai-devops-copilot
+2026-02-26T08:15:51.6962988Z ##[group]Getting Git version info
+2026-02-26T08:15:51.6964385Z Working directory is 'C:\Users\BhaskarSharma\ai-devops-copilot\actions-runner\_work\ai-devops-copilot\ai-devops-copilot'
+2026-02-26T08:15:51.7170268Z [command]"C:\Program Files\Git\cmd\git.exe" version
+2026-02-26T08:15:51.7527481Z git version 2.51.1.windows.1
+2026-02-26T08:15:51.7574752Z ##[endgroup]
+2026-02-26T08:15:51.7595071Z Copying 'C:\Users\BhaskarSharma\.gitconfig' to 'C:\Users\BhaskarSharma\ai-devops-copilot\actions-runner\_work\_temp\f32b9db2-5177-4710-b187-bb6db0e9306c\.gitconfig'
+2026-02-26T08:15:51.7614188Z Temporarily overriding HOME='C:\Users\BhaskarSharma\ai-devops-copilot\actions-runner\_work\_temp\f32b9db2-5177-4710-b187-bb6db0e9306c' before making global git config changes
+2026-02-26T08:15:51.7616434Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-26T08:15:51.7624632Z [command]"C:\Program Files\Git\cmd\git.exe" config --global --add safe.directory C:\Users\BhaskarSharma\ai-devops-copilot\actions-runner\_work\ai-devops-copilot\ai-devops-copilot
+2026-02-26T08:15:51.8091383Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --get remote.origin.url
+2026-02-26T08:15:51.8532919Z https://github.com/***/ai-devops-copilot
+2026-02-26T08:15:51.8581062Z ##[group]Removing previously created refs, to avoid conflicts
+2026-02-26T08:15:51.8588732Z [command]"C:\Program Files\Git\cmd\git.exe" rev-parse --symbolic-full-name --verify --quiet HEAD
+2026-02-26T08:15:51.9044652Z refs/heads/main
+2026-02-26T08:15:51.9091288Z [command]"C:\Program Files\Git\cmd\git.exe" checkout --detach
+2026-02-26T08:15:52.4610576Z HEAD is now at 481bb4f sc
+2026-02-26T08:15:52.5766306Z ##[endgroup]
+2026-02-26T08:15:52.5770946Z [command]"C:\Program Files\Git\cmd\git.exe" submodule status
+2026-02-26T08:15:53.5143448Z ##[error]fatal: no submodule mapping found in .gitmodules for path 'actions-runner/_work/ai-devops-copilot/ai-devops-copilot'
+2026-02-26T08:15:53.5209896Z Bad Submodules found, removing existing files
+2026-02-26T08:15:53.5211352Z ##[group]Cleaning the repository
+2026-02-26T08:15:53.5221220Z [command]"C:\Program Files\Git\cmd\git.exe" clean -ffdx
+2026-02-26T08:15:53.5734519Z [command]"C:\Program Files\Git\cmd\git.exe" reset --hard HEAD
+2026-02-26T08:15:53.6444379Z HEAD is now at 481bb4f sc
+2026-02-26T08:15:53.6499837Z ##[endgroup]
+2026-02-26T08:15:53.6534000Z ##[warning]Unable to clean or reset the repository. The repository will be recreated instead.
+2026-02-26T08:15:53.6538424Z Deleting the contents of 'C:\Users\BhaskarSharma\ai-devops-copilot\actions-runner\_work\ai-devops-copilot\ai-devops-copilot'
+2026-02-26T08:15:53.7955357Z ##[group]Initializing the repository
+2026-02-26T08:15:53.7961457Z [command]"C:\Program Files\Git\cmd\git.exe" init C:\Users\BhaskarSharma\ai-devops-copilot\actions-runner\_work\ai-devops-copilot\ai-devops-copilot
+2026-02-26T08:15:53.8913402Z Initialized empty Git repository in C:/Users/BhaskarSharma/ai-devops-copilot/actions-runner/_work/ai-devops-copilot/ai-devops-copilot/.git/
+2026-02-26T08:15:53.8976878Z [command]"C:\Program Files\Git\cmd\git.exe" remote add origin https://github.com/***/ai-devops-copilot
+2026-02-26T08:15:53.9458978Z ##[endgroup]
+2026-02-26T08:15:53.9459727Z ##[group]Disabling automatic garbage collection
+2026-02-26T08:15:53.9467353Z [command]"C:\Program Files\Git\cmd\git.exe" config --local gc.auto 0
+2026-02-26T08:15:53.9895657Z ##[endgroup]
+2026-02-26T08:15:53.9896304Z ##[group]Setting up auth
+2026-02-26T08:15:53.9910246Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-02-26T08:15:54.0261158Z [command]"C:\Program Files\Git\cmd\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-02-26T08:15:54.8662954Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-26T08:15:54.9285583Z [command]"C:\Program Files\Git\cmd\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-02-26T08:15:55.8788006Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-26T08:15:55.9170115Z [command]"C:\Program Files\Git\cmd\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-02-26T08:15:56.7043187Z [command]"C:\Program Files\Git\cmd\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-02-26T08:15:56.7410179Z ##[endgroup]
+2026-02-26T08:15:56.7410517Z ##[group]Fetching the repository
+2026-02-26T08:15:56.7420959Z [command]"C:\Program Files\Git\cmd\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +070ba07ad9f86988385397e45a08826c41122941:refs/remotes/origin/main
+2026-02-26T08:16:13.4592310Z From https://github.com/***/ai-devops-copilot
+2026-02-26T08:16:13.4593559Z  * [new ref]         070ba07ad9f86988385397e45a08826c41122941 -> origin/main
+2026-02-26T08:16:13.4905764Z ##[endgroup]
+2026-02-26T08:16:13.4906304Z ##[group]Determining the checkout info
+2026-02-26T08:16:13.4910609Z ##[endgroup]
+2026-02-26T08:16:13.4935258Z [command]"C:\Program Files\Git\cmd\git.exe" sparse-checkout disable
+2026-02-26T08:16:13.5524683Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-02-26T08:16:13.5860851Z ##[group]Checking out the ref
+2026-02-26T08:16:13.5861554Z [command]"C:\Program Files\Git\cmd\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2026-02-26T08:16:14.6605428Z Updating files:  49% (191/385)
+2026-02-26T08:16:14.6744657Z Updating files:  50% (193/385)
+2026-02-26T08:16:14.6805949Z Updating files:  51% (197/385)
+2026-02-26T08:16:14.7009166Z Updating files:  52% (201/385)
+2026-02-26T08:16:14.7063896Z Updating files:  53% (205/385)
+2026-02-26T08:16:14.7145842Z Updating files:  54% (208/385)
+2026-02-26T08:16:14.7217878Z Updating files:  55% (212/385)
+2026-02-26T08:16:14.7750236Z Updating files:  56% (216/385)
+2026-02-26T08:16:14.7907748Z Updating files:  57% (220/385)
+2026-02-26T08:16:14.8164690Z Updating files:  58% (224/385)
+2026-02-26T08:16:14.8217737Z Updating files:  59% (228/385)
+2026-02-26T08:16:14.8416896Z Updating files:  60% (231/385)
+2026-02-26T08:16:14.8555865Z Updating files:  61% (235/385)
+2026-02-26T08:16:14.8624809Z Updating files:  62% (239/385)
+2026-02-26T08:16:15.0022206Z Updating files:  63% (243/385)
+2026-02-26T08:16:15.1271920Z Updating files:  64% (247/385)
+2026-02-26T08:16:15.1376248Z Updating files:  65% (251/385)
+2026-02-26T08:16:15.1482697Z Updating files:  66% (255/385)
+2026-02-26T08:16:15.1588898Z Updating files:  67% (258/385)
+2026-02-26T08:16:15.1649020Z Updating files:  68% (262/385)
+2026-02-26T08:16:15.1739860Z Updating files:  69% (266/385)
+2026-02-26T08:16:15.1843838Z Updating files:  70% (270/385)
+2026-02-26T08:16:15.1874646Z Updating files:  71% (274/385)
+2026-02-26T08:16:15.1940959Z Updating files:  72% (278/385)
+2026-02-26T08:16:15.1962001Z Updating files:  73% (282/385)
+2026-02-26T08:16:15.2013108Z Updating files:  74% (285/385)
+2026-02-26T08:16:15.2203880Z Updating files:  75% (289/385)
+2026-02-26T08:16:15.2255804Z Updating files:  76% (293/385)
+2026-02-26T08:16:15.2349185Z Updating files:  77% (297/385)
+2026-02-26T08:16:15.2539732Z Updating files:  78% (301/385)
+2026-02-26T08:16:15.2600690Z Updating files:  79% (305/385)
+2026-02-26T08:16:15.2633804Z Updating files:  80% (308/385)
+2026-02-26T08:16:15.2732120Z Updating files:  81% (312/385)
+2026-02-26T08:16:15.2754376Z Updating files:  82% (316/385)
+2026-02-26T08:16:15.2774715Z Updating files:  83% (320/385)
+2026-02-26T08:16:15.2802341Z Updating files:  84% (324/385)
+2026-02-26T08:16:15.2869848Z Updating files:  85% (328/385)
+2026-02-26T08:16:15.2882858Z Updating files:  86% (332/385)
+2026-02-26T08:16:15.3171429Z Updating files:  87% (335/385)
+2026-02-26T08:16:15.3644929Z Updating files:  88% (339/385)
+2026-02-26T08:16:15.3725061Z Updating files:  89% (343/385)
+2026-02-26T08:16:15.4148800Z Updating files:  90% (347/385)
+2026-02-26T08:16:15.4323368Z Updating files:  91% (351/385)
+2026-02-26T08:16:15.4364900Z Updating files:  92% (355/385)
+2026-02-26T08:16:16.4223837Z Updating files:  93% (359/385)
+2026-02-26T08:16:16.9375898Z Updating files:  93% (360/385)
+2026-02-26T08:16:16.9505984Z Updating files:  94% (362/385)
+2026-02-26T08:16:16.9547646Z Updating files:  95% (366/385)
+2026-02-26T08:16:16.9575507Z Updating files:  96% (370/385)
+2026-02-26T08:16:16.9643909Z Updating files:  97% (374/385)
+2026-02-26T08:16:16.9663695Z Updating files:  98% (378/385)
+2026-02-26T08:16:16.9674240Z Updating files:  99% (382/385)
+2026-02-26T08:16:16.9674548Z Updating files: 100% (385/385)
+2026-02-26T08:16:16.9674720Z Updating files: 100% (385/385), done.
+2026-02-26T08:16:17.0064842Z branch 'main' set up to track 'origin/main'.
+2026-02-26T08:16:17.0109985Z Switched to a new branch 'main'
+2026-02-26T08:16:17.0776183Z ##[endgroup]
+2026-02-26T08:16:17.1364924Z [command]"C:\Program Files\Git\cmd\git.exe" log -1 --format=%H
+2026-02-26T08:16:17.1696495Z 070ba07ad9f86988385397e45a08826c41122941
+2026-02-26T08:16:17.2690434Z ##[group]Run docker login -u *** -p ***
+2026-02-26T08:16:17.2691134Z [36;1mdocker login -u *** -p ***[0m
+2026-02-26T08:16:17.3612494Z shell: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE -command ". '{0}'"
+2026-02-26T08:16:17.3613365Z env:
+2026-02-26T08:16:17.3614061Z   IMAGE_NAME: ***/ai-devops-copilot
+2026-02-26T08:16:17.3614627Z ##[endgroup]
+2026-02-26T08:16:18.5608469Z unknown shorthand flag: 'e' in -encodedCommand
+2026-02-26T08:16:18.5608666Z 
+2026-02-26T08:16:18.5608735Z Usage:  docker login [OPTIONS] [SERVER]
+2026-02-26T08:16:18.5608856Z 
+2026-02-26T08:16:18.5608939Z Run 'docker login --help' for more information
+2026-02-26T08:16:18.6282020Z ##[group]Run docker build -t $IMAGE_NAME:latest .
+2026-02-26T08:16:18.6282759Z [36;1mdocker build -t $IMAGE_NAME:latest .[0m
+2026-02-26T08:16:18.6284546Z [36;1mdocker tag $IMAGE_NAME:latest $IMAGE_NAME:070ba07ad9f86988385397e45a08826c41122941[0m
+2026-02-26T08:16:18.6965516Z shell: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE -command ". '{0}'"
+2026-02-26T08:16:18.6966276Z env:
+2026-02-26T08:16:18.6967158Z   IMAGE_NAME: ***/ai-devops-copilot
+2026-02-26T08:16:18.6967546Z ##[endgroup]
+2026-02-26T08:16:19.8297422Z ERROR: docker: 'docker buildx build' requires 1 argument
+2026-02-26T08:16:19.8297633Z 
+2026-02-26T08:16:19.8297757Z Usage:  docker buildx build [OPTIONS] PATH | URL | -
+2026-02-26T08:16:19.8297916Z 
+2026-02-26T08:16:19.8298009Z Run 'docker buildx build --help' for more information
+2026-02-26T08:16:19.9147650Z docker: 'docker tag' requires 2 arguments
+2026-02-26T08:16:19.9147974Z 
+2026-02-26T08:16:19.9148341Z Usage:  docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+2026-02-26T08:16:19.9148618Z 
+2026-02-26T08:16:19.9148751Z Run 'docker tag --help' for more information
+2026-02-26T08:16:20.1160953Z ##[error]Process completed with exit code 1.
+2026-02-26T08:16:20.1590475Z Post job cleanup.
+2026-02-26T08:16:20.3663956Z [command]"C:\Program Files\Git\cmd\git.exe" version
+2026-02-26T08:16:20.3985577Z git version 2.51.1.windows.1
+2026-02-26T08:16:20.4049281Z Copying 'C:\Users\BhaskarSharma\.gitconfig' to 'C:\Users\BhaskarSharma\ai-devops-copilot\actions-runner\_work\_temp\ff33196f-cde0-47e3-9b23-168079d65210\.gitconfig'
+2026-02-26T08:16:20.4073727Z Temporarily overriding HOME='C:\Users\BhaskarSharma\ai-devops-copilot\actions-runner\_work\_temp\ff33196f-cde0-47e3-9b23-168079d65210' before making global git config changes
+2026-02-26T08:16:20.4074386Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-26T08:16:20.4083712Z [command]"C:\Program Files\Git\cmd\git.exe" config --global --add safe.directory C:\Users\BhaskarSharma\ai-devops-copilot\actions-runner\_work\ai-devops-copilot\ai-devops-copilot
+2026-02-26T08:16:20.4487369Z [command]"C:\Program Files\Git\cmd\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-02-26T08:16:20.4868432Z [command]"C:\Program Files\Git\cmd\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-02-26T08:16:21.4077124Z fatal: No url found for submodule path 'actions-runner/_work/ai-devops-copilot/ai-devops-copilot' in .gitmodules
+2026-02-26T08:16:21.4204570Z ##[warning]The process 'C:\Program Files\Git\cmd\git.exe' failed with exit code 128
+2026-02-26T08:16:21.4364565Z Cleaning up orphan processes
