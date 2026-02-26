@@ -516,41 +516,31 @@ mindmap
 
 ## 📸 Screenshots
 
-<details>
-<summary>☸️ Kubernetes Pod Running</summary>
+### 🌐 FastAPI Swagger UI
+> Interactive API documentation auto-generated at `/docs`. Live `POST /ask` endpoint ready for testing with full request/response schema.
 
-> Demonstrates successful deployment and running container in Kubernetes with `kubectl get pods`.
+![FastAPI Swagger UI](https://raw.githubusercontent.com/dankbhardwaj/ai-devops-copilot/main/assets/fastapi-swagger-ui.png)
 
-![K8s Pods](docs/screenshots/k8s-pods.png)
+---
 
-</details>
+### 🔁 GitHub Actions CI/CD Pipeline
+> Every push to `main` automatically triggers: Docker image build → SHA tag → Docker Hub push → `kubectl set image` → rolling update. Full automation, zero manual steps.
 
-<details>
-<summary>🔄 Rolling Update in Progress</summary>
+![GitHub Actions CI/CD](https://raw.githubusercontent.com/dankbhardwaj/ai-devops-copilot/main/assets/github-actions-ci-cd.png)
 
-> Live rolling update with old pods terminating and new pods initializing — zero downtime maintained.
+---
 
-![Rolling Update](docs/screenshots/rolling-update.png)
+### ☸️ Kubernetes Pods Running
+> Successful deployment confirmed. All pods in `Running` state with correct image version pulled from Docker Hub and healthy readiness probes passing.
 
-</details>
+![Kubernetes Pods Running](https://raw.githubusercontent.com/dankbhardwaj/ai-devops-copilot/main/assets/k8s-pods-running.png)
 
-<details>
-<summary>🔁 GitHub Actions CI/CD Pipeline</summary>
+---
 
-> Automated workflow: build → tag → push → deploy. Triggered on every push to `main`.
+### 🔄 Kubernetes Rolling Update
+> Live rolling update in action — new pods spin up while old pods gracefully terminate. `maxUnavailable: 25%` and `maxSurge: 25%` ensure zero downtime throughout the entire update cycle.
 
-![CI/CD Pipeline](docs/screenshots/github-actions.png)
-
-</details>
-
-<details>
-<summary>🌐 FastAPI Swagger UI</summary>
-
-> Interactive API documentation at `/docs` with live `POST /ask` endpoint.
-
-![Swagger UI](docs/screenshots/swagger-ui.png)
-
-</details>
+![Kubernetes Rolling Update](https://raw.githubusercontent.com/dankbhardwaj/ai-devops-copilot/main/assets/k8s-rolling-update.png)
 
 ---
 
